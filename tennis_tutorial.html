@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Tutorial: Tennis
+</title>
+<style>
+
+p.ex1 {
+    margin-left: 5cm;
+}
+
+p {
+		margin: 5px 50px 5px 50px;
+	}
+
+
+</style>
+
+
+</head>
+
+<body>
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+<font face="avenir">
+<p>
+<h2>Tennis Volley</h2>
+<br>
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>	
+<td align = justify>
+This is your chance to go to the next level.... by making a sprite game with multiple flying objects.  The tennis balls need to go into an array, where you can move them and check any collisions using a forEach loop. 
+ <br><br>
+You can &quot;mod&quot; this game in any way you like - instead of tennis, go dodge flying cupcakes or fireballs!
+ <br>
+To see a working example click <a href = "http://www.learncodecraft.com/projects/tennis.html">here</a>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = "center"><br><br><b>Directions</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>	
+<td >
+<ol style="margin-left: 10px;">
+
+<li>If you are coding outside of WoofJS.com (like in Sublime), insert the Woof_JS source tag into the &lt;head&gt;section of your project page:
+  <p class="tab"><font color='blue' face="courier"> 
+ &lt;script src="https://rawgit.com/stevekrouse/WoofJS/master/dist/woof.js"&gt;&lt;/script&gt;
+</font>	</p>
+Your code now speaks Woof!<br>
+<br>
+<li>Select a background appropriate for your game.  Create a Player with an image you like.
+<br><br>
+<li>Have the Player &quot;glide&quot; using direction keys. This means that when you press a direction key, you don't change the Player's x or y position but rather their xVelocity or yVelocity. 
+<br><br>
+ HINT: don't forget to add friction to slow them down a little bit over time. 
+
+
+<br><br>
+<li>Make sure the Player reacts properly when they hit an edge of the screen. They can pass thru to the other side of the screen, stop or bounce. 
+
+<br><br>
+<li>Add a tennis ball object.  Have one created Every second or two at the side of the screen. Remember to push each one into an array.
+
+<br><br>
+<li>Now, use a forEach loop to move each tennis ball. If it hits the edge of the screen, have it be deleted from the screen and from the array.  
+
+<br><br>
+<li>Check if a tennis ball is hitting the Player. If so, remove it.  Then add or subtract points, show a fun collision graphic and play a sound if you want.  You can also increase tennis ball speed so the game gets harder.
+
+<br><br>
+<li>Add a score indicator on top of the screen.  
+
+<br><br>
+<li>Now add your Opponent. Have the Opponent move in a random way and have the new tennis balls start at his position.
+
+<br><br>
+<li>If you want to have each Hit Animations look different, find different images and put them all into an Image Array. Then when you are creating a new Hit Animation, generate a random number, and assign the url: attribute to be one of the images in the Image Array, like:
+<pre>
+<font color='blue' face="courier">
+var hitAnimation = new Image ({
+     url: arrayOfImages[randomNumber],
+     height:   etc 
+})
+ </font>
+</pre>
+<br>
+<li> Test and finish the project till it looks perfect to you.
+
+</ol>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+
+<center>
+
+
+
+
+
+
+<br><br>
+<br><br>
+(c) 2017 by Code Craft Academy
+</center>
+
+
+
+</body>
+</html>

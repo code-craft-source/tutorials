@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Tutorial: Do My Friends Know Me?
+</title>
+<style>
+
+p.ex1 {
+    margin-left: 5cm;
+}
+
+p {
+		margin: 5px 50px 5px 50px;
+	}
+
+
+</style>
+
+
+</head>
+
+<body>
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+<font face="avenir">
+<br>	
+<p>
+<h2>Do My Friends Know Me?</h2>
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>	
+<td align = justify>
+How well do your friends know you?  Create a custom Quiz Game all about you and your interests! You pick the topic questions and the answers. Give your friends the quiz and see how well they know you. <br>
+<br>
+For an example click <a href = "http://www.learncodecraft.com/projects/friendsknowme.html">here</a>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = "center"><br><br><b>Directions</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>	
+<td align = "left">
+<ol style="margin-left: 10px;">
+<br>
+<li> Create a web page with a personlized headline such as: <h3> Do you know Jackie?</h3>
+Put a picture of yourself if you'd like. 
+<br><br>
+<li> Add these Page Elements to the page:<br>
+* 2 buttons - one to get the question, one to give the answer<br>
+* 3 labels - one for the question, 1 for the answer, and 1 more for the comment.<br>
+* 1 input area - for the user to give the response<br>
+* 1 img area - to put the image associated with the answer.<br>
+<br>
+
+Make sure all the Page Elements have an id=&quot;...&quot; field.<br>
+<p class="tab"><font color='blue' face="courier">
+&lt;p id=&quot;questionLabel&quot;&gt;<br>
+</font>	</p>
+<br>
+<li> Setup an array with 3 or more question on topics you are interested in. Somtheing like:<br>
+<i>	
+&quot;Who is my favorite Hip-Hop recording artist?&quot;<br>
+&quot;What is my favorite museum in New York City?&quot;<br>
+&quot;Who are the best comedians out there?&quot;<br>
+</i>
+<br>
+<li> When the getQuestion button is clicked, randomly pick one of the available questions and show it to the user in the Question label. Something like: <p class="tab"><font color='blue' face="courier">  
+document.getElementById(&quot;questionLabel&quot;).innerHTML = questions[randNum]
+</font>	</p>
+
+
+<br>
+
+<br>
+<li> When the user clicks the giveAnswer button, take the response, and see if it matches one of your answers. If so, show the answer, the comment and the associated image, like:<br>
+<p class="tab"><font color='blue' face="courier">
+		    if (response.includes(&quot;batman&quot;)) {<br>
+  					&nbsp;&nbsp;SHOW BATMAN STUFF<br>
+				   }<br>
+</font>	</p>
+<br>
+<li> Build out 4-5 answers for each of the 3 questions. Add more to make guessing more fun. <br>
+<br>
+<li> Add points and count how many chances the user has had. <br>
+<br>
+<li> After the user is out of chances, rate them on how well they know you. Have fun here! :)<br>
+<br>
+<li>Keep working on the project and customizing until you are satisfied. 
+Ask your teacher/TA to upload it to your public folder. 
+<br>
+ 
+
+</ol>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+
+<center>
+<br><br>
+<br><br>
+(c) 2017 by Code Craft Academy
+</center>
+
+
+</font>
+</body>
+</html>

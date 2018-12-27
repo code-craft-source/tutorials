@@ -1,0 +1,75 @@
+
+body {
+    font-family: Avenir, Courier, Tahoma, Georgia, Arial, sans-serif;
+    background: white;
+    color: black;
+    font-size: 16px;
+}
+
+
+button {
+      color: slategrey;
+      cursor: pointer;
+
+}
+
+button:focus {
+  outline:0;
+}
+
+
+.code {
+  color: blue;
+  font-family: Courier;
+  font-size: 16px;
+  display: block;
+  unicode-bidi: embed;
+  white-space: pre;
+  margin-left: 30px;
+
+}
+
+
+.page-outer {
+    margin-left: 0px;
+    border: 0px solid blue;
+}
+
+.header {
+  margin-bottom: 0px;
+  padding: 0px 0px;
+  margin-left: 150px;
+  margin-right: 100px;
+  border: 0px solid red;
+
+}
+
+
+
+
+.center_container {
+  max-width: 700px;
+  margin: 30 auto;
+  padding: 20px 20px;
+  border: 0px solid purple;
+
+}
+
+
+
+.main-body {
+  margin-bottom: 0px;
+  padding: 0px 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 0px solid blue;
+
+}
+
+
+
+.head-links{
+      margin-left: 30px;
+      font-weight: bold;
+      color: blue;
+}

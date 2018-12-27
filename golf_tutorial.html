@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Tutorial: Golf
+</title>
+<style>
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="tut-styles.css" />
+
+</head>
+
+<body>
+<div class="page-outer">
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+
+<p>
+<h2>Golf</h2>
+<br>
+</center>
+
+<div class="header">
+Can you get your ball to the green, avoiding obstacles, using fewest strokes possible?<br><br>
+Use vector principles to translate the touch-and-pull game mechanic into the ball's speed and direction.
+Create this game using any theme you'd like, from standard green to under-sea or space-golf!
+<br><br>
+Here is an <a href = "http://www.learncodecraft.com/projects/golf.html"> example of a completed game</a>
+and a <a href = "http://www.learncodecraft.com/projects/spacegolf.html"> space-golf version.</a>
+<br><br>
+<br>
+</div>
+
+<center>
+<b>Directions</b></td>
+
+</center>
+<div class="main-body">
+<ol style="margin-left: 10px;">
+
+<li>If you are coding outside of WoofJS.com (like in Sublime), insert the Woof_JS source tag into the &lt;head&gt;section of your project page:
+  <p class="tab"><font color='blue' face="courier">
+ &lt;script src="https://rawgit.com/stevekrouse/WoofJS/master/dist/woof.js"&gt;&lt;/script&gt;
+</font>	</p>
+Your code now speaks Woof!<br>
+<br>
+<li>Select a background for your course that matces your theme.
+<br><br>
+<li>Create your ball and destination (hole and green, the planet Earth). These can be images or just a circe.  Place them on the screen in opposite corners
+<br><br>
+<li>Create a new Line for your flight vector - the direction where your rocket will go. Give it a bright color. Hide it by default.
+<br><br>
+<li>When the mouse is clicked, show the vector line and make it go from the mouse pointer to the ball. Have it adjust as you move the mouse.
+<br><br>
+<li>When the mouse is released, have the vector line disappear and set the speed of the ball be the direction of the vector.   Hint: the two components of ball speed (xSpeed and ySpeed) are a multiple of the  xLength and yLength of the vector line.
+<br><br>
+<li>Add a forever loop, and move the ball by the X and Y speed components. Make the ball slow down as it travels across the course, so it should eventually come to a stop.
+<br><br>
+<li>Have the ball &quot;bounce off&quot; as it hits edges of the screen.
+<br><br>
+<li>Add 3-4 barriers on the screen. Use the &quot;bounce off&quot; function you wrote to have the rocket bounce off the barriers.
+<br><br>
+<li>Create obstacles and set them up in the middle of the course to block the ball.
+<br><br>
+<li>Create a variable that counts how many strokes the player takes. Show it on the screen.
+<br><br>
+<li>Play a sound when you hit the ball.
+<br><br>
+<li>Check when the ball is in the hole, play a sound, stop the game and show the player score.
+<br><br>
+<li>Keep working on the project and customizing until you are satisfied. <br>
+Ask your teacher/TA to upload it to your public folder.
+</ol>
+</ol>
+<br>
+
+</div>
+
+<center>
+
+
+<br><br>
+<b>
+<br><br>
+
+<br><br>
+(c) 2018 by Code Craft Academy
+</center>
+</div>
+
+
+
+</font>
+
+</body>
+</html>

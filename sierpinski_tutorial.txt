@@ -1,0 +1,33 @@
+Sierpinski Triangle Tutorial
+
+
+Import the p5.js library 
+
+In the setup function, create a canvas
+
+Draw a circle in the middle of the screen. 
+
+Move the circle into a function. Create a function that, given an x and y position, and diameter d, draws a circle. 
+
+Now, lets make the function recursive. Call the function from within the function, shifting the circle in one direction and decreasing it in size. 
+
+In case you get a  "maximum call-stack exceeded" error, add an exit condition where you loop only if the diameter is above a certain limit. 
+
+Now make a second call that creates circles on the opposite side. So each circle will have two smaller ones around it. 
+
+Now add a slider element above your canvas and make the diameter variable a function of the slider value. 
+
+diameter=slider.value()
+
+Finally, add a third direction, call the function recursively while shifting the circle down (or up) on the Y axis.
+
+This is the famous Sierpinski Triangle, formed out of recursive circles.
+
+Play with the number of recursive shifts you do and what kinds of shapes this creates. 
+How is the recursive function creating complex shapes?
+
+ 
+
+
+
+

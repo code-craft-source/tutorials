@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Tutorial: Apple Catcher
+</title>
+<style>
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="tut-styles.css" />
+
+</head>
+
+<body>
+<div class="page-outer">
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+
+<p>
+<h2>Apple Catcher</h2>
+<br>
+</center>
+
+<div class="header">
+Its harvest season and the apples are dropping! Can your farmer catch them all?<br>
+Start with one apple, then use an array to have multiple apples falling at the same time.
+<br><br>
+Here is an <a href = "http://www.learncodecraft.com/projects/apple_catcher.html"> example of a completed game</a>
+<br><br>
+Open Woof_JS here: <a href = "http://woofjs.com/create.html">http://www.woofjs.com/create</a>
+<br>
+</div>
+
+
+<br><br>
+<center>
+<b>Directions</b></td>
+
+</center>
+<div class="main-body">
+<ol style="margin-left: 10px;">
+
+<li>If you are coding outside of WoofJS.com (like in Sublime), insert the Woof_JS source tag into the &lt;head&gt;section of your project page:
+<p class="code">
+ &lt;script src="https://rawgit.com/stevekrouse/WoofJS/master/dist/woof.js"&gt;&lt;/script&gt;
+</p>
+Your code now speaks Woof!<br>
+<br>
+
+<li>Find an appropriate backdrop (farm if you are catching apples, a circus tent if juggling pins) and add the url to the <font color='blue' face="courier">setBackdropURL</font> call.
+<br><br>
+<li> On the web, find two transparent images: an apple (or whatever you are ctching) and a farmer or another catcher. Save the URL's for the images.
+<br><br>
+<li> Add two image sprites. Use code from the <b>Sprites & Backgrounds</b> section of the Woof documentation.
+Now change the <b> url: </b> attribute in the sprite objects to be that of the images you found.
+<br><br>
+
+
+<li>Add a forever function to your code. (Hint: look in the <b>Control</b> section of the Woof documentation)
+This will take care of updating changes in the game in real time.<br>
+
+<br>
+<li>Inside the forever function, get your Catcher to move right or left if arrow keys are pressed.
+Look in the  <b>Sensing</b> section if there is an instruction that checks if a key is pressed. Copy it and put it inside an <b> if </b> statement:
+Something like:
+
+<p class="code">
+if (keysDown.includes('LEFT'))  {
+
+      //move the catcher left 10 pixels
+
+}
+</p>
+
+<li> Declare a text label for the score using a <b>Text</b> sprite.
+<br><br>
+<li> Create a variable (call it appleSpeed) and inside the forever loop, have the apple drop by that number.
+<br><br>
+<li> Check for apple hitting the bottom of the screen. If that happens, subtract 1 point and return the apple to the top of the screen.<br>
+<br><br>
+<li> Add a check for the catcher catching the apple. If this happens, add points, and also return the apple to the top of the screen.
+<br><br>
+<li> Show the score in the score label
+<br><br>
+<u>How do like the game now? Are you ready to have many apples falling at the same time?</u>
+<br><br>
+<li> Add an array called <b>all_apples</b>.
+<br><br>
+<li> Outside the forever loop, add an Every loop that creates a new apple every 2 seconds, and pushes it into the <b>all_apples</b> array
+<br><br>
+<li> Inside the forever loop,  add a forEach function that cycles through all the apples.
+  <p class="code">
+  all_apples.forEach ( apple =>  {
+
+      //move the code to move the apple, check if the apple was
+      //caught or hit the bottom of the screen HERE
+
+  })
+  </p>
+
+<li> Increase the speed of the apples as the score gets higher
+<br><br>
+<li> Play a sound every time an apple is caught
+<br><br>
+<li>Keep working on the project and customizing until you are satisfied. <br>
+Ask your teacher/TA to upload it to your public folder.
+</ol>
+
+<br>
+</div>
+
+
+
+
+
+
+
+<br><br>
+<b>
+<br><br>
+<center>
+<br><br>
+(c) 2018 by Code Craft Academy
+</center>
+
+
+</div>
+
+</body>
+</html>

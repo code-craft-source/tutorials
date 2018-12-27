@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Tutorial: BIZZ BUZZ
+</title>
+<style>
+
+p.ex1 {
+    margin-left: 5cm;
+}
+
+p {
+		margin: 5px 50px 5px 50px;
+	}
+
+
+</style>
+
+
+</head>
+
+<body>
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+<font face="avenir">
+<p>
+<h2>BIZZ BUZZ</h2>
+<br>
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>	
+<td align = justify>
+Here is a good way to start working with loops. <br>
+Print out all the numbers between 1 and 100. <br>
+If the number is divisible by 3 say <font color="red">BIZZ.</font>
+If its divisible by 5 say <font color="blue">BUZZ.</font><br>
+<br>
+For an example click <a href = "http://www.learncodecraft.com/projects/bizzbuzz.html">here</a>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = "center"><br><br><b>Directions</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>	
+<td align = justify>
+<ol style="margin-left: 10px;">
+
+<li>Create an HTML page with the name of the project and a Label.
+<br>
+<br>
+<li> Add a &lt;script&gt; section and use a loop to print out all the numbers between 1 and 100, one per line. Add whatever you want to print to a variable (i.e. theOutput+= ) and then put that variable into the Label to display it. For example: <br>
+<font color="blue" face="courier">
+document.getElementById("theLabel").innerHTML = theOutput;
+</font>
+<br>
+<br>
+<li> Next, for each number, also show the result of the number divided by 3, like this:
+<p class="tab"><font face="georgia">
+10 ... / 3 = 3.3333<br>
+11 ... / 3 = 3.6666<br>
+12 ... / 3 = 4.0<br>
+</font></p>
+<br>
+HINT : declare a string (<font color="blue">var myLine</font>) and for each line, add the elements you want to show to it. (<font color="blue">myLine +=</font>) Then print by adding myLine to theOutput <font color="blue">(theOutput += myLine)</font> when the line is &quot;complete&quot;.
+
+<br>
+<br>
+<li> Now change each line to show the remainder for each number divided by 3:
+<p class="tab"><font face="georgia">
+10 ... / 3 remainder = 0.3333<br>
+11 ... / 3 remainder = 0.666<br>
+12 ... / 3 remainder = 0.0<br>
+</font></p>
+<br>
+<br>
+<li> Change your code to just say BIZZ if the number is divisible by 3, like so:
+	<p class="tab"><font face="georgia">
+10... <br>
+11... <br>
+12...<font color="red">BIZZ.</font><br>
+</font></p>
+<br>
+<br>
+<li> Now show BUZZ if the number is divisible by 5, like so
+	<p class="tab"><font face="georgia">
+10... <font color="blue">BUZZ.</font><br>
+11... <br>
+12...<font color="red">BIZZ.</font><br>
+</font></p>
+<br>
+<br>
+
+<li> Make them print in the proper colors.
+<br>
+<br>
+<li> EXTRA CREDIT - look up what MOD division is (HINT: the MOD operator is %) and use MOD to check if the number is evenly divisible. 
+</ol>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+
+
+
+
+
+
+<center>
+
+
+
+
+
+<br><br>
+<b>
+<br><br>
+
+<br><br>
+(c) 2016 by Code Craft Academy
+</center>
+
+
+
+
+</font>
+
+</body>
+</html>

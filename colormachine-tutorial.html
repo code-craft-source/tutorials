@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Tutorial: Color-Machine
+</title>
+<style>
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="tut-styles.css" />
+
+</head>
+
+<body>
+<div class="page-outer">
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+
+<p>
+<h2>The Color Machine</h2>
+<br>
+</center>
+
+<div class="header">
+You are creating a beautiful machine that has the power to create any color in the world using RGB (RED-GREEN-BLUE).
+Give the machine 6 buttons, each one changing a different aspect of the color spectrum. This is your chance to try CSS styling.
+<br><br>
+Read this <a href="http://coding.space/web/css-guide.html">Intro to CSS </a> to learn about how to use CSS to style your buttons.
+<br><br>
+Here is an <a href = "http://www.learncodecraft.com/projects/colormachine.html"> example of a completed machine.</a>
+<br><br>
+<br>
+</div>
+
+<center>
+<b>Directions</b></td>
+
+</center>
+<div class="main-body">
+<ol style="margin-left: 10px;">
+
+
+  <li>Create a standard HTML page with a label and a pair of buttons.  For the label (use <b>&lt;p&gt;</b> or <b>&lt;div&gt;</b>).
+    One is PLUS button, the other a MINUS.  The buttons should each have <b>id</b> and <b>onClick</b> attributes,
+  <br><br>
+  <li>In the <b>&lt;script&gt;</b> section, create three variable, called redColor, blueColor, and greenColor and set each to 127.
+    Display their values in the label by changing <b>myLabel.innerHTML</b>.
+  <br><br>
+  <li>Inside the <b>&lt;head&gt;</b> section of your HTML page, add a section like this:
+    <p class="code">
+    &lt;style type="text/css"&gt;
+
+    &lt;/style&gt;
+    </p>
+<li> Inside this section, add CSS styling for your PLUS and MINUS buttons to be red. So if one button has an id=&quot;redPlus&quot;,
+  you would create a CSS selector:
+
+  <p class="code">
+      .redPlus {
+             background-color: red;
+      }
+  </p>
+  <li> Next, when each button is clicked, it should run a function and change redColor accordingly, up or down. You should see the change in the label.
+  <br><br>
+  <li> Now, set the color of the page to reflect the RGB colors. The code is something like (pay attention to the quotes). :
+
+    <p class="code">
+          PAGE BG COLOR  = 'rgb(' + redColor + ',' + greenColor + ',' + blueColor + ')';
+    </p>
+  Of course PAGE BG COLOR is pseudo-code.
+  <br><br>
+  <li> Repeat what you created for the Red buttons to add a pair of Green and a pair of Blue buttons.
+  <br><br>
+  <li> Do you see the same code in multiple places? Consolidate it!
+    Think about creating a single function that changes the color of the page and also the contents of the label.
+    After a button changes its color variable, have every button call the <b>changePage ()</b> function.
+    This way you only have to maintain one set of code to update the page.
+  <br><br>
+  <li>If you are enjoying playing with colors, create a Contrast Box on the page, and swap one of the RGB values in it to contrast with the color of the page.
+    So if the page is RGB, make the contrast box BGR. Do the colors look different in contrast to each other?
+  <br><br>
+  <li> Style your page, make it look good, add any variations you'd like.
+  <br><br>
+
+
+</div>
+
+
+<br><br>
+<b>
+<br><br>
+<center>
+<br><br>
+(c) 2018 by Code Craft Academy
+</center>
+
+
+</div>
+
+</body>
+</html>

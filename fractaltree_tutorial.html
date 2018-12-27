@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Tutorial: Fractal Tree
+</title>
+<style>
+
+p.ex1 {
+    margin-left: 5cm;
+}
+
+p {
+		margin: 5px 50px 5px 50px;
+	}
+
+
+</style>
+
+
+</head>
+
+<body>
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+<font face="avenir">
+<p>
+<h2>The Fractal Tree</h2>
+<br>
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>	
+<td align = justify>
+Explore the use of recursive functions with this elegant and interactive fractal figure - the Fractal Tree. 
+ <br><br>
+To see a working example click <a href = "http://www.learncodecraft.com/projects/p5_fractal_tree.html">here</a>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = "center"><br><br><b>Directions</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>	
+<td >
+<ol style="margin-left: 10px;">
+
+<li>Set up your HTML page, insert the P5.js source tags into the  &lt;head&gt;section of your project page:
+  <p class="tab"><font color='blue' face="courier"> 
+ &lt;script src= "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"&gt;&lt;/script&gt;<br><br>
+
+ &lt;script src= "http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"&gt;&lt;/script&gt;
+</font>	</p>
+Your code now speaks P5!
+<br><br>
+<li>In the setup function, create a canvas and draw a "trunk" line, 100 or so pixels long,  from the bottom center of the screen.
+<br><br>
+
+<li>Now, lets setup your recursive function. A branch is a line (or branch) with two branches extending off the top to the right and left.  As you can see, its a recursive definition. 
+<br><br>
+
+You should create a function called, say, <b>drawBranch()</b>, that, given an X and Y position as a starting point and 
+<font color='blue' face="courier">branchLength</font>,  draws one branch to one side, at an angle <font color='blue' face="courier">branchAngle.</font>  To do this right, you will need to use a bit of trigonometry. Remember "SohCahToa"!
+<br><br>
+HINT: the Math.sin function takes an angle in radians, not degrees. 
+<br><br>
+Call the function to draw one branch from the top of the trunk.
+<br><br>
+<li>Now create more branches to the same side by adding a call in the <b>drawBranch()</b> function to itself, using a new X and Y and making <font color='blue' face="courier">branchLength</font> smaller for each iteration. This is Recursion!
+<br><br>
+<li>Your first recursive loop may have gone on too long and produced a "maximum call-stack exceeded" error. Add a base-case exit condition check to stop the loop when <font color='blue' face="courier">branchLength
+</font> is smaller than some number, say <font color='blue' face="courier">minBranchLength
+</font>.
+<br><br>
+<li>Now add another variable, <font color='blue' face="courier">angleAdjust</font>. This is how much the angle should change with each iteration. Modify your <b>drawBranch()</b> function to change the angle by this amount. Does your brach now curve?  
+<br><br>
+<li>Write a function to clear the canvas.
+<br><br>
+<li>Add a button on top of the page above the canvas, that, when clicked, increases <font color='blue' face="courier">angleAdjust</font>. You will need to clear the canvas, increase <font color='blue' face="courier">angleAdjust</font> and redraw your tree. Once it works, display the <font color='blue' face="courier">angleAdjust</font> variable on the page, and add a minus button to reduce <font color='blue' face="courier">angleAdjust</font>.
+<br><br>
+<li>Add a counter to track how many branches are in your tree and show it on the screen.
+<br><br>
+Your tree project should now  
+ <a href = "http://www.learncodecraft.com/projects/p5_fractal_tree_part1.html">look like this.</a>
+<br><br>
+
+
+<li>Now go full-tree. Add a second recursive call to <b>drawBranch()</b> that curves in the opposite direction. This will create a second branch on top of every branch. Run it to see the whole tree. NOTE: it will take a bit more time to run and draw the tree.
+<br><br>
+
+<li>Add leaves to your tree. Make it so when length gets below a certain number, change branch color to be green.
+<br><br>
+
+<li>Add a variable by which to decrease <font color='blue' face="courier">branchLength
+</font> in each generation, called <font color='blue' face="courier">branchGrowth
+</font>.
+Add buttons to let the user modify the <font color='blue' face="courier">minBranchLength
+</font> and the <font color='blue' face="courier">branchGrowth
+</font> variables. 
+<br><br>
+
+
+
+<li> Test and finish the project till it looks perfect to you.
+
+</ol>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+<center>
+<br><br>
+<br><br>
+(c) 2018 by Code Craft Academy
+</center>
+
+
+
+</body>
+</html>

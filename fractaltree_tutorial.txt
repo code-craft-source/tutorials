@@ -1,0 +1,40 @@
+
+
+
+import the p5.js library 
+
+In the setup function, create a canvas
+
+Draw a "trunk" line from the bottom center of the screen, length 100
+
+Now, lets setup your recursive branch function. A branch is line with two branches extending off the top to the right and left.  As you can see, its a recursive definition. 
+
+You should create a function that, given an X and Y position as a starting point, and branchLength,  draws one branch to one side, at an angle (branchAngle).  To do this right, you will need to use a bit of trigonometry. Remember "SohCahToa"!
+HINT: the Math.sin function takes an angle in radians, not degrees. 
+
+Call the function to draw one branch from the top of the trunk.
+
+Now create more branches to the same side by adding a call at the bottom of the branch function to call itself, using a new X and Y, and decreasing the branchLength. You are now using Recursion!
+
+Your first recursive loop may have gone on too long and produced a "maximum call-stack exceeded" error. Add an exit condition check to stop the loop when branchLength is smaller than some number, minBranchLength.
+
+Now add another variable, angleAdjust. This is how much the angle should change with each iteration. Modify your drawBranch function to change the angle by this amount. Does your brach now curve?  
+
+Write a function to clear the canvas.
+
+Add a button on top of the page above the canvas, that, when clicked, increases angleAdjust. You will need to clear the canvas, increase angleAdjust and redraw your tree. Once it works, display the angleAdjust variable on the page, and add a minus button to reduce angleAdjust.
+
+Your tree project should now look like this. 
+
+Now go full-tree. Add a second call to your recursive makeBranch call but that curves in the opposite direction to create a second branch on top of every branch. Run it to see the whole tree. NOTE: it will take a bit more time to run and draw the tree.
+
+Add a variable by which to decrease branchLength in each generation, called branchGrowth.
+Add buttons to similarly modify the minBranchLength and the branchGrowth variables. 
+
+
+Add leaves to your tree. Make it so when length gets below a certain number, change branch color to be green.
+
+
+
+
+

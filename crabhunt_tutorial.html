@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Tutorial: Crab Hunt
+</title>
+<style>
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="tut-styles.css" />
+
+</head>
+
+<body>
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+<font face="avenir">
+<p>
+<h2>Crab Hunt</h2>
+<br>
+<table width = "100%">
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = justify>
+Here is a fun starter game to get familiar with sprite game mechanics and Woof_JS. Move your crab (or whatever sprite you choose) around the board to pick up as much food as possible before the timer runs out.
+<br><br>
+Here is an <a href = "http://www.learncodecraft.com/projects/crab_hunt.html"> example of a completed game</a>
+<br><br>
+Open Woof_JS here: <a href = "http://woofjs.com/create.html">http://www.woofjs.com/create</a>
+<br>
+
+</td>
+<td></td>
+</tr></table>
+
+
+<table width = "100%">
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = "center"><br><br><b>Directions</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td align = left>
+<ol style="margin-left: 10px;">
+
+<li>If you are coding outside of WoofJS.com (like in Sublime), insert the Woof_JS source tag into the &lt;head&gt;section of your project page:
+<p class="code">
+ &lt;script src="https://rawgit.com/stevekrouse/WoofJS/master/dist/woof.js"&gt;&lt;/script&gt;
+</p>
+Your code now speaks Woof!<br>
+<br>
+
+<li>Find an appropriate backdrop (ocean if you are doing fish, space if spaceships, etc) and add the url to the <font color='blue' face="courier">setBackdropURL</font> call
+<br><br>
+<li> On the web, find two transparent images: a hunter (crab) and a food (fish). Save the URL's for the images.
+<br><br>
+<li> Add two sprite images. Use code from the <b>Sprites & Backgrounds</b> section of the Woof documentation.
+
+  Now change the <b> url: </b> attribute in the sprite object to be that of the crab,fish, alien etc images you found.
+<br><br>
+
+
+<li>Add a forever function to your code. (Hint: look in the <b>Control</b> section of the Woof documentation)
+This will take care of updating changes in the game in real time.<br>
+
+<br>
+<li>Inside the forever function, get your Crab to move in 4 directions if arrow keys are pressed.
+Look in the  <b>Sensing</b> section if there is an instruction that checks if a key is pressed. Copy it and put it inside an <b> if </b> statement:
+Something like:
+
+<p class="code">
+if (keysDown.includes('UP'))  {
+
+      //move the crab up 5 pixels
+
+}
+</p>
+
+
+<li> Declare a <b>Text</b> sprite lable to show points.
+<br><br>
+<li> Add a check for the Crab catching the fish. If this happens, add points, and move the fish to a random spot on the screen.
+<br><br>
+<li> Check for Crab hitting the edges of the screen and react appropriately.<br>
+<br>
+<li> Create a timer variable and set it to however many seconds you want the game to last.<br>
+<br>
+<li> Add an <b>every</b> function, cycling every second. (Look in the  <b>Control</b> section.)
+Inside the every function, decrease the timer by 1, and when the timer runs down, stop the game.
+<br><br>
+<li> Play a sound every time the crab gets a point.
+<br><br>
+<li>Keep working on the project and customizing until you are satisfied. <br>
+Ask your teacher/TA to upload it to your public folder.
+</ol>
+
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+
+
+
+
+
+
+<center>
+
+
+
+
+
+<br><br>
+<b>
+<br><br>
+
+<br><br>
+(c) 2018 by Code Craft Academy
+</center>
+
+
+
+
+</font>
+
+</body>
+</html>

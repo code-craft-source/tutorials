@@ -1,0 +1,129 @@
+Your First Server with Node.js
+
+Welcome to the other side of programming - the Server Side!
+You will be writing code that will power your site, tie pages together into a single experience and pull data from databases. 
+
+You will also start using the Terminal and managing your code by typing on "the command line" - old school, but also the way real developers work. 
+
+The platform we'll use is Node.js and Node's Experess framework for routing. Node lets you write javaScript code on the server side. 
+
+The first project is basic (but not easy): set up a node.js server on your laptop and have it serve a page that displays content from a local text file. 
+
+
+1) Set up local node and NPM. 
+Use Homebrew on Mac  http://blog.teamtreehouse.com/install-node-js-npm-mac
+
+2) Create a Node HTTP server. In sublime, create a file called server.js.
+Add this:
+
+ 		var http = require("http");
+		var server = http.createServer().listen(8081);
+
+
+               server.on('request', function (request, response) {
+                            response.writeHead(200, {'Content-Type': 'text/html'});
+		            response.end("Here is my server");
+                            console.log('Just added a line on a page');
+
+                });
+
+                console.log('Server running at http://127.0.0.1:8081/');
+
+In your terminal, type node server.js
+in your browser, type  localhost:8081 and see if you see the page
+Look at the terminal output. Which line executed first?
+
+
+3) Respond to requests by displaying content on the page. 
+Add this to the request function:
+
+ 			 response.write("This is page content "\n")
+ 	                 response.write("The page you asked for is "+request.url)
+                         console.log('The page you asked for is '+request.url);
+
+});
+
+Do CTRL-C to exit node, and then run by typing: node server.js again in your terminal.
+
+	
+4) Read a local file and add the content to the page. Use: 
+ fs.readFile( "content.txt", function (err, data) {
+             process and show the data
+  });
+
+
+
+
+
+=========================================
+
+A multi-page Site with Express for Node.js
+
+1) Setup Express and launch an Express server
+npm install express --save
+
+const express = require('express');
+const app = express();
+const serverX = app.listen(8082, function () {
+      console.log("\n Celeb App listening on PORT :%s", port)
+}
+
+
+2) Setup up routers to have different responses to different endpoints
+
+app.get('/about*', function (req, res) {
+   res.sendFile( __dirname + "/" + "aboutpage.html" );
+})
+
+
+3) Create a POST form that can submit the contents of a simple form - say name and email.
+
+IN THE EXPRESS APP:
+const bodyParser = require('body-parser');
+const urlencodedParser = bodyParser.urlencoded({ extended: false })
+
+app.post('/add_person', urlencodedParser, function (req, res) {
+
+ let newUser = {
+      name:req.body.name,
+      id:req.body.id
+   };
+
+})
+
+IN THE FORM
+<form action = "http://localhost:8082/add_celeb" method = "POST">
+<input type = "text" name = "name">  <br>
+</form>
+
+
+4) Read a Remote File  
+http.get(listURL, (response) => {   
+           response.on('data', (chunk) => {
+                   jsonData += chunk;
+            });
+
+
+5) Process JSON 
+Read in a JSON file of users.
+Show info foreach user
+
+response.on('end', () => {
+                   console.log(jsonData);
+                   console.log(JSON.parse(jsonData));             
+                   celebs = JSON.parse( jsonData); //convert string JSON into array of OBJECTS  
+       
+            })
+
+
+6) Display list Page 
+Setup a few basic API calls
+allow for /listUsers
+/showuser/1  - ask for a specifc user with an ID
+app.get('/showuser/:id', function (req, res) {
+
+});
+
+
+
+ 

@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Tutorial: Flappy Bird
+</title>
+<style>
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="tut-styles.css" />
+
+</head>
+
+<body>
+<div class="page-outer">
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+
+<p>
+<h2>Flappy Bird Jungle</h2>
+<br>
+</center>
+
+<div class="header">
+Help your exotic bird fly through a trecherous jungle and avoid hunter's nets.<br>
+You are getting more practice with arrays and manging multiple sprites - the nets - as well as "play-balancing" your game.
+Have fun!
+<br><br>
+Here is an <a href = "http://www.learncodecraft.com/projects/flappy-bird-jungle.html"> example of a completed game</a>
+<br><br>
+<br>
+</div>
+
+<center>
+<b>Directions</b></td>
+
+</center>
+<div class="main-body">
+<ol style="margin-left: 10px;">
+
+<li>If you are coding outside of WoofJS.com (like in Sublime), insert the Woof_JS source tag into the &lt;head&gt;section of your project page:
+<p class="code">
+ &lt;script src="https://rawgit.com/stevekrouse/WoofJS/master/dist/woof.js"&gt;&lt;/script&gt;
+</p>
+Your code now speaks Woof!<br>
+<br>
+
+<li>Find an appropriate backdrop (jungle, dessert) and add the url to the <font color='blue' face="courier">setBackdropURL</font> call.
+<br><br>
+<li> Create an image sprite for your bird and start it in the middle of the screen.
+<br><br>
+<li>Add a forever function to your code.  Inside the forever function, have your bird drop down continuously.
+<br><br>
+<li>  Then, if you are pressing a key, have the bird fly up.
+Play-balance this so the bird looks like its flying.
+</p>
+<li> Add an array called <b>obstacles</b>.
+<br><br>
+<li> Find transparent images for your top and bottom obstaces -nets, pipes, dragons etc...
+<br><br>
+<li> Outside the forever loop, add an Every loop that creates a new pair of obstacles every X seconds, and pushes them into the <b>obstacles</b> array.
+Make the nets come out at different heights by making the <b>y value</b> a random number. 
+<br><br>
+<li> Inside the forever loop,  add a forEach loop that cycles through all the obstacles.
+  <p class="code">
+  obstacles.forEach ( net =>  {
+
+        //move each net to the left
+        //if the net has reached the left side of the screen, delete it
+  })
+  </p>
+<li> Declare a text label for the score using a Text sprite.
+<br><br>
+<li> If the bird passes thru the nets without touching, earn some points.
+<br><br>
+<li> Check if a net has hit the bird. If so, lose points. Show an "och" sprite or similar. If you have less than 0 points, end the game.
+<br><br>
+<li> Play a "squak" sound every couple of seconds. Or play a fun Brazilian soundtrack.
+<br><br>
+<li>Keep working on the project and customizing until you are satisfied. <br>
+Ask your teacher/TA to upload it to your public folder.
+</ol>
+
+<br>
+</div>
+
+
+
+
+
+
+
+<br><br>
+<b>
+<br><br>
+<center>
+<br><br>
+(c) 2018 by Code Craft Academy
+</center>
+
+
+</div>
+
+</body>
+</html>

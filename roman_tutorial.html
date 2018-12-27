@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Tutorial: Roman Counter
+</title>
+<style>
+
+p.ex1 {
+    margin-left: 5cm;
+}
+
+p {
+		margin: 5px 50px 5px 50px;
+	}
+
+
+</style>
+
+
+</head>
+
+<body>
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+<font face="avenir">
+<p>
+<h2>ROMAN COUNTER</h2>
+<br>
+<table width = "100%"> 
+<colgroup>
+<col width="120 px"/>
+<col width="450 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>	
+<td align = left>
+In Roman Notation, letters stood for numbers. And instead of decimal places, the number of symbols indicated the total value. <br><br>
+Write a bot to show simple Roman Notation. For each of the numbers between 1 and 100, print X for the number of 10's,  V for the number  of 5's and I for and remaining singles. So you would print:<br>
+<br>
+8: XVIII<br>
+15: XV<br>
+39: XXXVIIII<br>
+<br>
+For an example click <a href = "http://www.learncodecraft.com/projects/romancounter.html">here</a>
+</td>
+<td></td>
+</tr></table>
+
+
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = "center"><br><br><b>Directions</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>	
+<td align = justify>
+<ol style="margin-left: 10px;">
+<li>Create a simple web-page with a Label. Use a for-loop to print out the numbers between 1 and 100 into a string (called something like theOutput) which you then show in the Label.
+<br>
+<br>
+<li>Use a printLine variable to &quot;build a line.&quot;  That is, assemble the various parts of the line by adding them to the printLine variable before outputting the completed line using <font color="blue">theOutput += printLine;</font>
+<br>
+<br>
+<li> For each number, show the number, then the number of times it's cleanly divisible by 10, so something like:
+<p class="tab"><font face="georgia">
+29)     X:2<br>
+30)     X:3<br>
+57)     X:5<br>
+</font></p>
+<br>
+<li> Now add how many 5's are in the remainder, after the number is divided by 10, like this:
+<p class="tab"><font face="georgia">
+29)     X:2  V:1<br>
+30)     X:3  V:0<br>
+57)     X:5  V:1<br>
+</font></p>
+<br>
+<li> Finally, add how many 1's are left after you subtract the 10's and the 5's
+<p class="tab"><font face="georgia">
+29)     X:2  V:1    I:4<br>
+30)     X:3  V:0    I:0<br>
+57)     X:5  V:1    I:2<br>
+</font></p>
+<br>
+<li> Now, using a nested loop, build the line by printing the number of X's corresponding to the number:
+<p class="tab"><font face="georgia">
+29)    XX<br>
+30)    XXX<br>
+57)    XXXXX<br>
+</font></p>
+<br>
+Your nested loop might look something like:
+<br>
+<p class="tab"><font color='blue' face="courier">
+<pre>
+  for (var i=1; i&lt;100; i++) {
+          //print each number
+          //figure out how many X's, V's and I's in that number
+
+          for (var j=1; j&lt;numberOfXs; j++) {
+               //print an "X"
+          }
+          
+}
+</pre>
+</font>	</p>
+
+
+
+<li>  Now add two more nested loops to print out the V's and I's
+<br><br>
+<li>  For extra credit, first print a C for the number of 100's in the number. Try this for the numbers between 1 and 1000. So 436 would be: CCCCXXXVI
+<br><br>
+<li> Clean the code until you&apos;ve fixed all the bugs, and then run it and show it to your friends. 
+
+</ol>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+<center>
+
+<br><br>
+(c) 2017 by Code Craft Academy
+</center>
+<br><br>
+
+
+</font>
+
+</body>
+</html>

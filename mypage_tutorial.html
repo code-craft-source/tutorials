@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>Tutorial: MyPage
+</title>
+<style>
+
+p.ex1 {
+    margin-left: 5cm;
+}
+
+p {
+		margin: 5px 50px 5px 50px;
+	}
+
+
+</style>
+
+
+</head>
+
+<body>
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+<font face="avenir" size=4>
+<p>
+<h2>My Page</h2>
+<br>
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>	
+<td align = justify>
+We are going to make your own persanal Web Page, using HTML, images and links. <br>
+
+<br>
+For an example click <a href = "http://www.learncodecraft.com/codecamp2017/myFirstPageEsme.html">here</a>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = "center"><br><br><b>Directions</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>	
+<td align = justify>
+<ol style="margin-left: 10px;">
+
+<li>1. Open Sublime and build a webpage by adding: 
+<font face="courier" color="blue" siz>
+<pre>
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;title>Maya's Page &lt;/title&gt;
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+This is my page
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+</font>
+to an empty file. Save it with a .html extension.<br>
+
+
+<br>
+<br>
+<li> Add an  headline to the page:<br>
+<font color="blue" face="courier">
+&lt;h1&gt;This is Maya's Page &lt;/h1&gt;<br>
+</font>
+<br>
+
+<li>Add an image, with an explanation. <br>
+Use 
+<font color="blue" face="courier">
+&lt;img src="http://www.images.com/havenese.jpg"&gt;<br>
+</font>
+<br>
+<i>This is a picture of a Havanese, my favorite kind of Dog.</i><br>
+<br>
+
+<li>Make the most important word in the explanation red. <br>
+Use: <font color="blue" face="courier">
+&lt;font color="red"&gt; this word &lt;/font&gt;<br>
+</font>
+<br>
+<i>This is a picture of <font color="red">a Havanese,</font> my favorite kind of Dog. </i><br>
+<br>
+<li>Add a link to your favorite site, use:<br>
+<font color="blue" face="courier">
+&lt;a href = "http://www.netflix.com"&gt; Link to Netflix &lt;/a&gt;
+</font>
+Add an explanation why you like the site.<br>
+<br>
+<li>Add a button:<br>
+<font color="blue" face="courier">
+ &lt;button onClick = "DO_STUFF"&gt;ShowIt&lt;/button&gt;<br>
+</font>
+and a label. <br>
+<font color="blue" face="courier">
+&lt;p id="theLabel"&gt;This is My Label!&lt;/p&gt;
+</font>
+<br>
+<br>
+<li>Now you are ready to write your first JavaScrpt code! <br>
+Between &lt;script&gt; tags, add a function called showIt:
+<pre>
+<font color="blue" face="courier">
+&lt;script&gt;
+
+function showIt() {
+
+}
+
+&lt;/script&gt;
+</font>
+</pre>
+
+<li>Make the function change theLabel to say "Hello." Use:
+<font color="blue" face="courier">
+document.getElementById("theLabel").innerHTML = "Hello! I am alive!";<br>
+</font>
+<br>
+<br>
+
+<li>Run the function when the button is clicked by adding:<br>
+<font color="blue" face="courier">
+ onClick = "showIt();"<br>
+</font>
+to the Button. Test that everything is working. If so, you have JavaScript code! <br>
+<br>
+<li> Change the background color of the page using :<br>
+<font color="blue" face="courier">
+	document.body.style.backgroundColor = "lightblue";
+</font>
+<br>
+<br>
+<li>Add an input field.  <br>
+<font color="blue" face="courier">
+&lt;input type="text" size=50 id="inputField" value="You say..."&gt;
+</font>
+<br>
+<br>
+When the button is clicked, have the function take whatever the user has typed in the input field and show it on the label with:  <br>
+ <br>
+ <font color="blue" face="courier">
+document.getElementById("theLabel").innerHTML = "You said: " + document.getElementById("inputField").value
+</font>
+<br>
+<br>
+Thats it!  You can customize this page as much as you like, then show it to your friends to admire
+<br>
+<br>
+
+
+
+
+ 
+</ol>
+<br>
+</td>
+<td></td>
+</tr></table>
+
+
+
+
+
+<center>
+
+
+
+
+
+<br><br>
+<b>
+<br><br>
+
+<br><br>
+(c) 2016 by Code Craft Academy
+</center>
+
+
+
+
+</font>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Tutorial: Twilio Textbot
+</title>
+<style>
+
+p.ex1 {
+    margin-left: 5cm;
+}
+
+p {
+		margin: 5px 50px 5px 50px;
+	}
+
+
+</style>
+
+
+</head>
+
+<body>
+<center>
+<img width = 300 src = "http://www.learncodecraft.com/images/cc_logo_2.png"><br>
+<font face="avenir">
+<p>
+<h2>Twilio Textbot</h2>
+<br>
+<table width = "100%"> 
+<colgroup>
+<col width="120 px"/>
+<col width="450 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>	
+<td align = center>
+
+Twilio is an example of a powerful, all purpose messaging API on the web. Its used by thousands of prefessional developers to add messaging - phone calls and text messages - into their apps. For this project, you will send text messages from a web page. You will need to setup user accounts on Twilio and also on Webscript.io, because Twilio will not accept messages directly from a web browser. <br>NOTE: To get a text, your mobile number will first need to be verified for this Twilio test account.
+<br><br>
+Here is <a href = "http://www.learncodecraft.com/projects/textbot.html" target="_blank">an example of a finished project</a>
+</td>
+<td></td>
+</tr></table>
+
+
+<table width = "100%"> 
+<colgroup>
+<col width="100 px"/>
+<col width="400 px"/>
+<col width="100 px"/>
+</colgroup>
+<tr>
+<td></td>
+<td align = "center"><br><br><b>Directions</b></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>	
+<td align = justify>
+<ol style="margin-left: 10px;">
+
+<li>Create a webform page with 2 input fields, one for a name and one for a message and a “Send” button.” 
+<br><br>
+
+<li> Add a function that runs when you click the input field.
+ Have it send parameters in a GET URL query to a web script. This looks something like:
+ <br>
+ <font color='blue' face="courier">
+window.location=&quot;http://youraccount.webscript.io/showmessage?name=value1&amp;message=value2&quot;
+</font>
+
+<br><br>
+<li>Setup a WebScript account on www.webscript.io. 
+<br><br>
+<li>Create a new Lua script, called something like showmessage. This script should  grab the query URL parameters. Here is an example:
+<br><br>
+<font color='blue' face="courier">
+output = &quot;Hello &quot;..request.query.name..&quot; your message is &quot;..request.query.message<br>
+return output.
+</font> 
+<br><br>
+Save your script.
+<br><br>
+<li> Go back to the textbot.html page and modify the URL query to match your twlio account. Test the page to make sure its sending properly. Here is <a href = "http://www.learncodecraft.com/projects/simplewebscript.html" target="_blank">a working example.</a>
+<br><br>
+<li> Next, setup a twilio account on www.twilio.com.
+<br><br>
+<li> Get an ACCOUNT SID, and AUTH TOKEN. 
+Buy a Phone Number you can send from. Send a test text message from the twilo dashboard.
+<br><br>
+<li> Authorize phones that can receive test SMS messages under &quot;Verified Caller IDs&quot;
+<br><br>
+<li> Go back to WebScript and create a new script called sendtwilio, or similar. Include:
+<pre>
+<font color='blue' face="courier">
+local twilio = require('twilio')
+local ACCOUNTSID =  xxxx 
+local AUTHTOKEN =  yyyy
+local response = twilio.sms(. . .)
+</font>
+</pre>
+Look up Lua Twilio script for details. 
+<br><br>
+<li> Update your textbot.html page to send a GET URL query to the new sendtwilio script, with the parameters needed to send a text - number and message.
+<br><br>
+<li> Test and finish the project till it looks perfect to you.
+
+</ol>
+
+Have fun and good luck!
+
+
+
+<br>
+</td>
+<td></td>
+</tr></table>
+
+<center>
+
+<br><br>
+(c) 2017 by Code Craft Academy
+</center>
+<br><br>
+
+
+</font>
+
+</body>
+</html>
